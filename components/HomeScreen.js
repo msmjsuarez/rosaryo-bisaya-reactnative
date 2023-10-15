@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ScrollView, Image, TouchableOpacity, View, Text, Dimensions } from 'react-native';
 import ImageViewer from 'react-native-image-pan-zoom';
 import styles from '../styles';
+import RosaryGuide from '../assets/images/RosaryGuide.jpg';
 
 function HomeScreen({ navigation }) {
   const [screenWidth, setScreenWidth] = useState(Dimensions.get('window').width);
@@ -39,7 +40,7 @@ function HomeScreen({ navigation }) {
           maxOverflow={0}
         >
           <Image
-            source={require('../images/RosaryGuide.jpg')} // Replace with the correct image path
+            source={RosaryGuide} // Replace with the correct image path
             style={{
               width: screenWidth,
               height: calculatedHeight,

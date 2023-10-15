@@ -7,9 +7,14 @@ import Credo from './Prayers/Credo';
 import Katapusan from './Prayers/Katapusan';
 import JesusKo from './Prayers/JesusKo';
 import HimayaSaAmahan from './Prayers/HimayaSaAmahan';
-import AudioPlayer from './AudioPlayer';
-import plusIcon from '../images/plus.png';
-import minusIcon from '../images/minus.png';
+import plusIcon from '../assets/images/plus.png';
+import minusIcon from '../assets/images/minus.png';
+import FL from '../assets/images/first-luminous.png';
+import SL from '../assets/images/second-luminous.png';
+import TL from '../assets/images/third-luminous.png';
+import FRL from '../assets/images/fourth-luminous.png';
+import FFL from '../assets/images/fifth-luminous.png';
+
 
 const KahayagScreen = () => {
   const [PasiunaCollapsed, setPasiunaCollapsed] = useState(true);
@@ -48,14 +53,9 @@ const KahayagScreen = () => {
     settaposCollapsed(!taposCollapsed);
   };
 
-
-  const audioFile = require('../kahayag.mp3');
-
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Text style={styles.mediumTitleText}>Ang Mga Misteryo sa Kahayag</Text>
-
-        <AudioPlayer audioFile={audioFile} /> 
 
         {/* Pasiuna */}
             <TouchableOpacity
@@ -104,7 +104,7 @@ const KahayagScreen = () => {
             {!unangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/first-luminous.png')}
+                        source={FL}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -142,7 +142,7 @@ const KahayagScreen = () => {
             {!ikaduhangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/second-luminous.png')}
+                        source={SL}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -180,7 +180,7 @@ const KahayagScreen = () => {
             {!ikatulongMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/third-luminous.png')}
+                        source={TL}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -218,7 +218,7 @@ const KahayagScreen = () => {
             {!ikaupatMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fourth-luminous.png')}
+                        source={FRL}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -256,7 +256,7 @@ const KahayagScreen = () => {
             {!ikalimangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fifth-luminous.png')}
+                        source={FFL}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>

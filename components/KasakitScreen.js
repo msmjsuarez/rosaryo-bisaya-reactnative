@@ -7,9 +7,14 @@ import Credo from './Prayers/Credo';
 import Katapusan from './Prayers/Katapusan';
 import JesusKo from './Prayers/JesusKo';
 import HimayaSaAmahan from './Prayers/HimayaSaAmahan';
-import AudioPlayer from './AudioPlayer';
-import plusIcon from '../images/plus.png';
-import minusIcon from '../images/minus.png';
+import plusIcon from '../assets/images/plus.png';
+import minusIcon from '../assets/images/minus.png';
+import FS from '../assets/images/first-sorrowful.png';
+import SS from '../assets/images/second-sorrowful.png';
+import TS from '../assets/images/third-sorrowful.png';
+import FRS from '../assets/images/fourth-sorrowful.png';
+import FFS from '../assets/images/fifth-sorrowful.png';
+
 
 const KasakitScreen = () => {
   const [PasiunaCollapsed, setPasiunaCollapsed] = useState(true);
@@ -48,13 +53,9 @@ const KasakitScreen = () => {
     settaposCollapsed(!taposCollapsed);
   };
 
-  const audioFile = require('../kasakit.mp3');
-
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Text style={styles.mediumTitleText}>Ang Mga Misteryo sa Kasakit</Text>
-
-        <AudioPlayer audioFile={audioFile} />
 
         {/* Pasiuna */}
             <TouchableOpacity
@@ -103,7 +104,7 @@ const KasakitScreen = () => {
             {!unangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/first-sorrowful.png')}
+                        source={FS}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -141,7 +142,7 @@ const KasakitScreen = () => {
             {!ikaduhangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/second-sorrowful.png')}
+                        source={SS}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -179,7 +180,7 @@ const KasakitScreen = () => {
             {!ikatulongMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/third-sorrowful.png')}
+                        source={TS}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -217,7 +218,7 @@ const KasakitScreen = () => {
             {!ikaupatMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fourth-sorrowful.png')}
+                        source={FRS}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -255,7 +256,7 @@ const KasakitScreen = () => {
             {!ikalimangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fifth-sorrowful.png')}
+                        source={FFS}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>

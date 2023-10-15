@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     color: '#F4E869',
   },
   mainBg: {
-    backgroundColor: '#2E4374',
+    backgroundColor: '#7fa99b',
     padding: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   headButtonContainer: {
     elevation: 8,
-    backgroundColor: "#6499E9",
+    backgroundColor: "#394a51",
     borderRadius: 5,
     paddingVertical: 7,
     paddingHorizontal: 12
@@ -133,7 +133,45 @@ const styles = StyleSheet.create({
   },
   audioStateText: {
     paddingBottom: 10
-  }
+  },
+  playlist: {
+    marginTop: 40,
+    marginBottom: 40
+  },
+  playlistItem: {
+    fontSize: 22,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 8,
+    paddingRight: 8,
+    borderRadius: 4,
+    color: '#394a51',
+  },
+  trackProgress: {
+    marginTop: 40,
+    textAlign: 'center',
+    fontSize: 24,
+    color: '#000'
+  },
+  songTitle: {
+    fontSize: 32,
+    marginTop: 50,
+    color: '#000'
+  },
+  artistName: {
+    fontSize: 24,
+    color: '#394a51'
+  },
+  days: {
+    fontSize: 18,
+    color: '#8f8787'
+  },
+  playerContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 20,
+    backgroundColor: '#fbf2d5'
+  },
 });
 
 export default styles;

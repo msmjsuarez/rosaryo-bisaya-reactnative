@@ -7,9 +7,14 @@ import Credo from './Prayers/Credo';
 import Katapusan from './Prayers/Katapusan';
 import JesusKo from './Prayers/JesusKo';
 import HimayaSaAmahan from './Prayers/HimayaSaAmahan';
-import AudioPlayer from './AudioPlayer';
-import plusIcon from '../images/plus.png';
-import minusIcon from '../images/minus.png';
+import plusIcon from '../assets/images/plus.png';
+import minusIcon from '../assets/images/minus.png';
+import FG from '../assets/images/first-glorious.png';
+import SG from '../assets/images/second-glorious.png';
+import TG from '../assets/images/third-glorious.png';
+import FRG from '../assets/images/fourth-glorious.png';
+import FFG from '../assets/images/fifth-glorious.png';
+
 
 const HimayaScreen = () => {
   const [PasiunaCollapsed, setPasiunaCollapsed] = useState(true);
@@ -48,13 +53,9 @@ const HimayaScreen = () => {
     settaposCollapsed(!taposCollapsed);
   };
 
-  const audioFile = require('../himaya.mp3');
-
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Text style={styles.mediumTitleText}>Ang Mga Misteryo sa Himaya</Text>
-
-        <AudioPlayer audioFile={audioFile} /> 
 
         {/* Pasiuna */}
             <TouchableOpacity
@@ -103,7 +104,7 @@ const HimayaScreen = () => {
             {!unangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/first-glorious.png')}
+                        source={FG}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -141,7 +142,7 @@ const HimayaScreen = () => {
             {!ikaduhangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/second-glorious.png')}
+                        source={SG}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -179,7 +180,7 @@ const HimayaScreen = () => {
             {!ikatulongMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/third-glorious.png')}
+                        source={TG}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -217,7 +218,7 @@ const HimayaScreen = () => {
             {!ikaupatMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fourth-glorious.png')}
+                        source={FRG}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -255,7 +256,7 @@ const HimayaScreen = () => {
             {!ikalimangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fifth-glorious.png')}
+                        source={FFG}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>

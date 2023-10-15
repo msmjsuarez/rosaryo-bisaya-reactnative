@@ -7,9 +7,13 @@ import Credo from './Prayers/Credo';
 import Katapusan from './Prayers/Katapusan';
 import JesusKo from './Prayers/JesusKo';
 import HimayaSaAmahan from './Prayers/HimayaSaAmahan';
-import AudioPlayer from './AudioPlayer';
-import plusIcon from '../images/plus.png';
-import minusIcon from '../images/minus.png';
+import plusIcon from '../assets/images/plus.png';
+import minusIcon from '../assets/images/minus.png';
+import FJ from '../assets/images/first-joyful.png';
+import SJ from '../assets/images/second-joyful.png';
+import TJ from '../assets/images/third-joyful.png';
+import FRJ from '../assets/images/fourth-joyful.png';
+import FFJ from '../assets/images/fifth-joyful.png';
 
 const KalipayScreen = () => {
   const [PasiunaCollapsed, setPasiunaCollapsed] = useState(true);
@@ -48,13 +52,9 @@ const KalipayScreen = () => {
     settaposCollapsed(!taposCollapsed);
   };
 
-  const audioFile = require('../kalipay.mp3');
-
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Text style={styles.mediumTitleText}>Ang Mga Misteryo sa Kalipay</Text>
-
-        <AudioPlayer audioFile={audioFile} />
 
         {/* Pasiuna */}
             <TouchableOpacity
@@ -103,7 +103,7 @@ const KalipayScreen = () => {
             {!unangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/first-joyful.png')}
+                        source={FJ}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -141,7 +141,7 @@ const KalipayScreen = () => {
             {!ikaduhangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/second-joyful.png')}
+                        source={SJ}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -179,7 +179,7 @@ const KalipayScreen = () => {
             {!ikatulongMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/third-joyful.png')}
+                        source={TJ}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -217,7 +217,7 @@ const KalipayScreen = () => {
             {!ikaupatMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fourth-joyful.png')}
+                        source={FRJ}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
@@ -255,7 +255,7 @@ const KalipayScreen = () => {
             {!ikalimangMisteryoCollapsed && (
                 <View style={styles.collapsibleContentContainer}>
                     <Image
-                        source={require('../images/fifth-joyful.png')}
+                        source={FFJ}
                         style={styles.image}
                         />
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
