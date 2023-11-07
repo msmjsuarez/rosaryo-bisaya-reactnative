@@ -70,6 +70,7 @@ const KalipayScreen = () => {
             </TouchableOpacity>
 
             {!PasiunaCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
                         "TIMAAN SA KRUS"</Text>
@@ -86,6 +87,7 @@ const KalipayScreen = () => {
                     <HimayaSaAmahan />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -101,6 +103,7 @@ const KalipayScreen = () => {
                 /> Unang Misteryo sa Kalipay</Text>
             </TouchableOpacity>
             {!unangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FJ}
@@ -124,6 +127,7 @@ const KalipayScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -139,6 +143,7 @@ const KalipayScreen = () => {
                 /> Ikaduhang Misteryo sa Kalipay</Text>
             </TouchableOpacity>
             {!ikaduhangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={SJ}
@@ -162,6 +167,7 @@ const KalipayScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -177,6 +183,7 @@ const KalipayScreen = () => {
                 /> Ikatulong Misteryo sa Kalipay</Text>
             </TouchableOpacity>
             {!ikatulongMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={TJ}
@@ -200,6 +207,7 @@ const KalipayScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -215,6 +223,7 @@ const KalipayScreen = () => {
                 /> Ika-upat nga Misteryo sa Kalipay</Text>
             </TouchableOpacity>
             {!ikaupatMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FRJ}
@@ -238,6 +247,7 @@ const KalipayScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -253,6 +263,7 @@ const KalipayScreen = () => {
                 /> Ikalimang Misteryo sa Kalipay</Text>
             </TouchableOpacity>
             {!ikalimangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FFJ}
@@ -276,6 +287,7 @@ const KalipayScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
         {/* Pag-ampo Tapos sa Rosaryo */}
@@ -290,11 +302,13 @@ const KalipayScreen = () => {
                 /> Pag-ampo Tapos sa Rosaryo</Text>
             </TouchableOpacity>
             {!taposCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
 
                     <Katapusan />
 
                 </View>
+                </TouchableOpacity>
             )}
 
         </ScrollView>

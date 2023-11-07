@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, Image, TouchableOpacity, View, Text, Dimensions } from 'react-native';
+import { ScrollView, Image, TouchableOpacity, View, Text, Dimensions, TouchableWithoutFeedback } from 'react-native';
 import ImageViewer from 'react-native-image-pan-zoom';
 import styles from '../styles';
 import RosaryGuide from '../assets/images/RosaryGuide.jpg';
@@ -29,8 +29,11 @@ function HomeScreen({ navigation }) {
     <ScrollView
       contentContainerStyle={styles.scrollContainer} // Apply styles to the content container
     >
+      
       <View style={styles.container}>
+     
         <Text style={styles.text}>Gamita ang duha ka tudlo para modako ang guide nga imahe.</Text>
+        <TouchableWithoutFeedback>
         <ImageViewer
           style={{ width: screenWidth, height: calculatedHeight }}
           cropWidth={screenWidth}
@@ -39,6 +42,7 @@ function HomeScreen({ navigation }) {
           imageHeight={calculatedHeight}
           maxOverflow={0}
         >
+          
           <Image
             source={RosaryGuide} // Replace with the correct image path
             style={{
@@ -48,15 +52,14 @@ function HomeScreen({ navigation }) {
             }}
           />
         </ImageViewer>
-        <TouchableOpacity onPress={() => navigation.navigate('Misteryo')} style={styles.headButtonContainer}>
-          <Text style={styles.headButtonText}>Adto sa mga Misteryo</Text>
-        </TouchableOpacity>
+        </TouchableWithoutFeedback>
 
         <Text></Text>
         <Text></Text>
         <Text></Text>
-
+       
       </View>
+      
     </ScrollView>
   );
 }

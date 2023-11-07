@@ -8,8 +8,6 @@ import KasakitScreen from './KasakitScreen';
 import KahayagScreen from './KahayagScreen';
 import HimayaScreen from './HimayaScreen';
 import RosaryAudio from './RosaryAudio';
-import DownloadAudio from  './DownloadAudio';
-import DownloadingModal from  './DownloadingModal';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../styles';
 
@@ -62,8 +60,6 @@ function Menu() {
         <Stack.Screen name="KahayagScreen" component={KahayagScreen} options={{title: 'Misteryo sa Kahayag'}} />
         <Stack.Screen name="HimayaScreen" component={HimayaScreen} options={{title: 'Misteryo sa Himaya'}} />
         <Stack.Screen name="RosaryAudio" component={RosaryAudio} options={{title: 'Rosaryo Audio'}} />
-        <Stack.Screen name="DownloadAudio" component={DownloadAudio} options={{title: 'Download Audio'}} />
-        <Stack.Screen name="DownloadingModal" component={DownloadingModal} options={{title: 'Downloading Modal'}} />
 
     </Stack.Navigator>
   );

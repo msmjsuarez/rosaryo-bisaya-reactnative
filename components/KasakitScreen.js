@@ -71,6 +71,7 @@ const KasakitScreen = () => {
             </TouchableOpacity>
 
             {!PasiunaCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
                         "TIMAAN SA KRUS"</Text>
@@ -87,6 +88,7 @@ const KasakitScreen = () => {
                     <HimayaSaAmahan />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -102,6 +104,7 @@ const KasakitScreen = () => {
                 /> Unang Misteryo sa Kasakit</Text>
             </TouchableOpacity>
             {!unangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FS}
@@ -125,6 +128,7 @@ const KasakitScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -140,6 +144,7 @@ const KasakitScreen = () => {
                 /> Ikaduhang Misteryo sa Kasakit</Text>
             </TouchableOpacity>
             {!ikaduhangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={SS}
@@ -163,6 +168,7 @@ const KasakitScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -178,6 +184,7 @@ const KasakitScreen = () => {
                 /> Ikatulong Misteryo sa Kasakit</Text>
             </TouchableOpacity>
             {!ikatulongMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={TS}
@@ -201,6 +208,7 @@ const KasakitScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -216,6 +224,7 @@ const KasakitScreen = () => {
                 /> Ika-upat nga Misteryo sa Kasakit</Text>
             </TouchableOpacity>
             {!ikaupatMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FRS}
@@ -239,6 +248,7 @@ const KasakitScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -254,6 +264,7 @@ const KasakitScreen = () => {
                 /> Ikalimang Misteryo sa Kasakit</Text>
             </TouchableOpacity>
             {!ikalimangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FFS}
@@ -277,6 +288,7 @@ const KasakitScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
         {/* Pag-ampo Tapos sa Rosaryo */}
@@ -291,11 +303,13 @@ const KasakitScreen = () => {
                 /> Pag-ampo Tapos sa Rosaryo</Text>
             </TouchableOpacity>
             {!taposCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
 
                     <Katapusan />
 
                 </View>
+                </TouchableOpacity>
             )}
 
         </ScrollView>

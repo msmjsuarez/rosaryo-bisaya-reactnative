@@ -10,6 +10,11 @@ import kasakit from '../assets/kasakit.mp3';
 import kahayag from '../assets/kahayag.mp3';
 import himaya from '../assets/himaya.mp3';
 
+import FJ from '../assets/images/first-joyful.png';
+import FS from '../assets/images/first-sorrowful.png';
+import FL from '../assets/images/first-luminous.png';
+import FG from '../assets/images/first-glorious.png';
+
 export async function setupPlayer() {
   let isSetup = false;
   try {
@@ -60,6 +65,7 @@ export async function addTracks() {
       artist: 'All Glory is to our Lord',
       days: 'Lunes ug Sabado',
       duration: convertTimeToSeconds('35:18'),
+      artwork: (FJ)
     },
     {
       id: '2',
@@ -68,22 +74,25 @@ export async function addTracks() {
       artist: 'All Glory is to our Lord',
       days: 'Martes ug Byernes',
       duration: convertTimeToSeconds('35:18'),
+      artwork: (FS)
     },
     {
       id: '3',
       url: kahayag,
       title: 'Kahayag',
       artist: 'All Glory is to our Lord',
-      days: 'Huwebes',
+      days: 'Huybes',
       duration: convertTimeToSeconds('35:18'),
+      artwork: (FL)
     },
     {
       id: '4',
       url: himaya,
       title: 'Himaya',
       artist: 'All Glory is to our Lord',
-      days: 'Myerkules ug Dominggo',
+      days: 'Miyerkoles ug Domingo',
       duration: convertTimeToSeconds('35:18'),
+      artwork: (FG)
     }
   ]);
   await TrackPlayer.setRepeatMode(RepeatMode.Queue);

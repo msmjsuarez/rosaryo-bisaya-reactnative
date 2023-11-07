@@ -71,6 +71,7 @@ const KahayagScreen = () => {
             </TouchableOpacity>
 
             {!PasiunaCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
                         "TIMAAN SA KRUS"</Text>
@@ -79,6 +80,9 @@ const KahayagScreen = () => {
                     <Text style={styles.collapsibleContent}></Text>
 
                     <Credo />
+
+                    <Text style={styles.collapsibleContent}></Text>
+
                     <AmahanNamo />
                     <MaghimayaKaMaria />
 
@@ -87,6 +91,7 @@ const KahayagScreen = () => {
                     <HimayaSaAmahan />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -102,6 +107,7 @@ const KahayagScreen = () => {
                 /> Unang Misteryo sa Kahayag</Text>
             </TouchableOpacity>
             {!unangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FL}
@@ -125,6 +131,7 @@ const KahayagScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -140,6 +147,7 @@ const KahayagScreen = () => {
                 /> Ikaduhang Misteryo sa Kahayag</Text>
             </TouchableOpacity>
             {!ikaduhangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={SL}
@@ -163,6 +171,7 @@ const KahayagScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -178,6 +187,7 @@ const KahayagScreen = () => {
                 /> Ikatulong Misteryo sa Kahayag</Text>
             </TouchableOpacity>
             {!ikatulongMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={TL}
@@ -201,6 +211,7 @@ const KahayagScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -216,6 +227,7 @@ const KahayagScreen = () => {
                 /> Ika-upat nga Misteryo sa Kahayag</Text>
             </TouchableOpacity>
             {!ikaupatMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FRL}
@@ -239,6 +251,7 @@ const KahayagScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
 
@@ -254,6 +267,7 @@ const KahayagScreen = () => {
                 /> Ikalimang Misteryo sa Kahayag</Text>
             </TouchableOpacity>
             {!ikalimangMisteryoCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FFL}
@@ -277,6 +291,7 @@ const KahayagScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableOpacity>
             )}
 
         {/* Pag-ampo Tapos sa Rosaryo */}
@@ -291,11 +306,13 @@ const KahayagScreen = () => {
                 /> Pag-ampo Tapos sa Rosaryo</Text>
             </TouchableOpacity>
             {!taposCollapsed && (
+                <TouchableOpacity>
                 <View style={styles.collapsibleContentContainer}>
 
                     <Katapusan />
 
                 </View>
+                </TouchableOpacity>
             )}
 
         </ScrollView>

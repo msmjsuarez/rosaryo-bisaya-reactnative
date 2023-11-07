@@ -22,9 +22,7 @@ const MisteryoScreen = () => {
         navigation.navigate('HimayaScreen');
     } else if (screenName === 'RosaryAudio') {
       navigation.navigate('RosaryAudio');
-  } else if (screenName === 'DownloadAudio') {
-    navigation.navigate('DownloadAudio');
-} else {
+  } else {
       navigation.navigate(screenName);
     }
   };
@@ -32,16 +30,6 @@ const MisteryoScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <Text style={styles.largeTitleText}>Ang Mga Misteryo</Text>
-
-      <TouchableOpacity style={styles.misteryoButton} onPress={() => handleNavigation('DownloadAudio')}>
-        <Image
-          source={RosaryAudioImg}
-          style={styles.image}
-        />
-        <Text style={styles.largeTitleText}>Download Audio</Text>
-      </TouchableOpacity>
-
-
 
       <TouchableOpacity style={styles.misteryoButton} onPress={() => handleNavigation('RosaryAudio')}>
         <Image

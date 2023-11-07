@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, ScrollView, TouchableWithoutFeedback, Image } from 'react-native';
 import styles from '../styles';
 import AmahanNamo from './Prayers/AmahanNamo';
 import MaghimayaKaMaria from './Prayers/MaghimayaKaMaria';
@@ -58,19 +58,21 @@ const HimayaScreen = () => {
         <Text style={styles.mediumTitleText}>Ang Mga Misteryo sa Himaya</Text>
 
         {/* Pasiuna */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={togglePasiuna}
-            >
+            <TouchableWithoutFeedback onPress={togglePasiuna}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
 
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={PasiunaCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Pasiuna</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+            
+
 
             {!PasiunaCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
                     <Text style={[styles.collapsibleContent, styles.textCenter]}>
                         "TIMAAN SA KRUS"</Text>
@@ -79,6 +81,9 @@ const HimayaScreen = () => {
                     <Text style={styles.collapsibleContent}></Text>
 
                     <Credo />
+
+                    <Text style={styles.collapsibleContent}></Text>
+
                     <AmahanNamo />
                     <MaghimayaKaMaria />
 
@@ -87,21 +92,24 @@ const HimayaScreen = () => {
                     <HimayaSaAmahan />
                     
                 </View>
+                </TouchableWithoutFeedback>
             )}
+            
 
 
         {/* Unang Misteryo */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={toggleUnangMisteryo}
-            >
+            <TouchableWithoutFeedback onPress={toggleUnangMisteryo}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={unangMisteryoCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Unang Misteryo sa Himaya</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+
             {!unangMisteryoCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FG}
@@ -125,21 +133,23 @@ const HimayaScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableWithoutFeedback>
             )}
 
 
         {/* Ikaduhang Misteryo */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={toggleIkaduhangMisteryo}
-            >
+            <TouchableWithoutFeedback onPress={toggleIkaduhangMisteryo}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={ikaduhangMisteryoCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Ikaduhang Misteryo sa Himaya</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+
             {!ikaduhangMisteryoCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={SG}
@@ -163,21 +173,23 @@ const HimayaScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableWithoutFeedback>
             )}
 
 
         {/* Ikatulong Misteryo */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={toggleIkatulongMisteryo}
-            >
+            <TouchableWithoutFeedback onPress={toggleIkatulongMisteryo}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={ikatulongMisteryoCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Ikatulong Misteryo sa Himaya</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+
             {!ikatulongMisteryoCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={TG}
@@ -201,21 +213,24 @@ const HimayaScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableWithoutFeedback>
             )}
 
 
         {/* Ikaupat Misteryo */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={toggleIkaupatMisteryo}
-            >
+            <TouchableWithoutFeedback onPress={toggleIkaupatMisteryo}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
+            
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={ikaupatMisteryoCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Ika-upat nga Misteryo sa Himaya</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+
             {!ikaupatMisteryoCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FRG}
@@ -239,21 +254,24 @@ const HimayaScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableWithoutFeedback>
             )}
 
 
         {/* Ikalimang Misteryo */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={toggleIkalimangMisteryo}
-            >
+            <TouchableWithoutFeedback onPress={toggleIkalimangMisteryo}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
+
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={ikalimangMisteryoCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Ikalimang Misteryo sa Himaya</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+
             {!ikalimangMisteryoCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
                     <Image
                         source={FFG}
@@ -277,25 +295,29 @@ const HimayaScreen = () => {
                     <JesusKo />
                     
                 </View>
+                </TouchableWithoutFeedback>
             )}
 
         {/* Pag-ampo Tapos sa Rosaryo */}
-            <TouchableOpacity
-                style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}
-                onPress={toggletapos}
-            >
+            <TouchableWithoutFeedback onPress={toggletapos}>
+            <View style={[styles.collapsibleHeader, styles.fullWidthHeader, styles.collapsibleTitleBackground]}>
+            
                 <Text style={styles.collapsibleTitle}>
                 <Image
                 source={taposCollapsed ? plusIcon : minusIcon}
                 style={styles.icon}
                 /> Pag-ampo Tapos sa Rosaryo</Text>
-            </TouchableOpacity>
+            </View>
+            </TouchableWithoutFeedback>
+
             {!taposCollapsed && (
+                <TouchableWithoutFeedback>
                 <View style={styles.collapsibleContentContainer}>
 
                     <Katapusan />
 
                 </View>
+                </TouchableWithoutFeedback>
             )}
 
         </ScrollView>

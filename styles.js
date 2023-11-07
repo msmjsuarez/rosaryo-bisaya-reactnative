@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     color: '#F4E869',
   },
   mainBg: {
-    backgroundColor: '#7fa99b',
+    backgroundColor: '#055C9D',
     padding: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   headButtonContainer: {
     elevation: 8,
-    backgroundColor: "#394a51",
+    backgroundColor: "#0E86D4",
     borderRadius: 5,
     paddingVertical: 7,
     paddingHorizontal: 12
@@ -70,12 +70,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   largeTitleText: {
-    fontSize: 30
+    fontSize: 30,
+    color: '#3a3a3a',
   },
   mediumTitleText: {
     fontSize: 25,
     padding: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: '#3a3a3a',
   },
   scrollContainer: {
     backgroundColor: '#fff',
@@ -102,13 +104,15 @@ const styles = StyleSheet.create({
   },
   collapsibleTitle: {
     fontSize: 25,
+    color: '#3a3a3a',
   },
   collapsibleContentContainer: {
     padding: 20,
   },
   collapsibleContent: {
     fontSize: 23,
-    textAlign: 'justify',
+    textAlign: 'left',
+    color: '#3a3a3a',
   },
   textCenter: {
     textAlign: 'center',
@@ -135,42 +139,44 @@ const styles = StyleSheet.create({
     paddingBottom: 10
   },
   playlist: {
-    marginTop: 40,
-    marginBottom: 40
+    marginTop: 0,
+    marginBottom: 0
   },
   playlistItem: {
-    fontSize: 22,
-    paddingTop: 10,
-    paddingBottom: 10,
+    fontSize: 18,
+    paddingTop: 5,
+    paddingBottom: 5,
     paddingLeft: 8,
     paddingRight: 8,
     borderRadius: 4,
     color: '#394a51',
   },
   trackProgress: {
-    marginTop: 40,
+    marginTop: 0,
     textAlign: 'center',
     fontSize: 24,
     color: '#000'
   },
   songTitle: {
-    fontSize: 32,
-    marginTop: 50,
+    fontSize: 20,
+    marginTop: 10,
     color: '#000'
   },
   artistName: {
-    fontSize: 24,
+    fontSize: 17,
     color: '#394a51'
   },
   days: {
-    fontSize: 18,
+    fontSize: 15,
     color: '#8f8787'
   },
   playerContainer: {
     flex: 1,
     justifyContent: 'center',
-    padding: 20,
-    backgroundColor: '#fbf2d5'
+    padding: 5,
+  },
+  backgroundImage: {
+    flex: 1,
   },
 });
 
