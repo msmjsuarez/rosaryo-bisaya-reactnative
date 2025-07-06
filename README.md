@@ -55,7 +55,7 @@ A: The prayers are in **Bisaya (Cebuano)**. Most UI elements are in Filipino or 
 
 ## 🙏 Credits
 
-- Developed by [MJ Layasan](https://mjlayasan.com)
+- Developed by [MJ Layasan](https://portfolio.mjlayasan.com/)
 - Audio: Professionally recorded Bisaya Rosary prayers
 - Icons & Illustrations: Public domain or properly licensed
 
