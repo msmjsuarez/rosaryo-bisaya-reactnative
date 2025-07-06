@@ -18,10 +18,9 @@
 
 ## 📥 Installation
 
-This is a standalone mobile app available for Android and iOS.
+This is a standalone mobile app available for Android.
 
-- **Android**: [Google Play Store](#) *(Coming Soon)*
-- **iOS**: [Apple App Store](#) *(Coming Soon)*
+- **Android**: [Google Play Store](https://play.google.com/store/apps/details?id=com.rosaryobisaya) 
 
 ---
 
