@@ -24,17 +24,9 @@ This is a standalone mobile app available for Android.
 
 ---
 
-## 📷 Screenshots
-
-| Home Screen | Mystery Selection | Audio Player |
-|-------------|-------------------|--------------|
-| ![Home](assets/screens/home.png) | ![Mystery](assets/screens/mystery.png) | ![Audio](assets/screens/audio.png) |
-
----
-
 ## 📜 Privacy Policy
 
-Rosaryo Bisaya may Audio does **not collect or store** any personal information. All content and audio are stored locally. Read the full [Privacy Policy](https://your-website-link.com/privacy).
+Rosaryo Bisaya may Audio does **not collect or store** any personal information. All content and audio are stored locally. Read the full [Privacy Policy](https://mjlayasan.com/rosaryo-bisaya/privacy-policy.html).
 
 ---
 
